@@ -1,17 +1,20 @@
 <template>
   <NuxtLink to="#">
-    <div class="flex items-center p-2 rounded hover:font-bold hover:bg-zinc-50 hover:scale-105">
+    <div
+      class="flex items-center justify-center py-4 rounded lg:justify-start hover:font-bold hover:bg-zinc-50 hover:scale-105">
       <Icon
-        name="hugeicons:home-09"
-        size="26"></Icon>
+        class="lg:mx-4"
+        :name="iconName"
+        size="28"></Icon>
       <h2
-        class="hidden ml-2 text-xl lg:block"
+        class="hidden overflow-hidden text-lg lg:block"
         :class="active">
         {{ title }}
       </h2>
     </div>
   </NuxtLink>
 </template>
+Z
 
 <script setup lang="ts">
   const props = defineProps<{

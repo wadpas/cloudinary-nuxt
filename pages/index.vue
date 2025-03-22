@@ -7,9 +7,11 @@
       </div>
     </div>
     <!-- Center content -->
-    <div class="bg-cyan-50">Center</div>
+    <main class="col-span-12 sm:col-span-8 lg:col-span-6">Center</main>
     <!-- Right sidebar -->
-    <div class="bg-red-50">Right</div>
+    <div class="hidden sm:block sm:col-span-3 lg:col-span-4">
+      <SidebarRight />
+    </div>
   </div>
 </template>
 

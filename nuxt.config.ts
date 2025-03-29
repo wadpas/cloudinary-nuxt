@@ -14,5 +14,8 @@ export default defineNuxtConfig({
       apiKey: process.env.CLOUDINARY_API_KEY,
       apiSecret: process.env.CLOUDINARY_API_SECRET,
     },
+    stripeSecret: process.env.NUXT_STRIPE_SECRET_KEY,
+    stripeWebhookSecret: process.env.NUXT_STRIPE_WEBHOOK_SECRET,
+    uploadPreset: process.env.NUXT_PUBLIC_UPLOAD_PRESET,
   },
 })

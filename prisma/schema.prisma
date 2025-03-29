@@ -1,0 +1,131 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  user
+  admin
+}
+
+model User {
+  id            String         @id @default(auto()) @map("_id") @db.ObjectId
+  email         String         @unique
+  username      String?
+  firstname     String?
+  lastname      String?
+  role          UserRole       @default(user)
+  avatarUrl     String?
+  password      String?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  oAuthAccounts OAuthAccount[]
+  orders        Order[]
+  books         Book[]
+  genres        Genre[]
+  authors       Author[]
+  comments      Comment[]
+
+  @@map("users")
+}
+
+model OAuthAccount {
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  providerId     String
+  providerUserId String
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  userId         String   @db.ObjectId
+  user           User     @relation(fields: [userId], references: [id])
+
+  @@unique([providerId, providerUserId])
+  @@map("oAuthAccounts")
+}
+
+model Book {
+  id          String    @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  slug        String    @unique
+  authorIds   String[]  @db.ObjectId
+  authors     Author[]  @relation(fields: [authorIds], references: [id])
+  genreIds    String[]  @db.ObjectId
+  genres      Genre[]   @relation(fields: [genreIds], references: [id])
+  description String
+  filePath    String
+  coverPath   String
+  comments    Comment[]
+  ratings     Int[]     @default([])
+  year        Int
+  pages       Int
+  price       Int
+  isFeatured  Boolean   @default(true)
+  isAvailable Boolean   @default(true)
+  creatorId   String    @db.ObjectId
+  creator     User      @relation(fields: [creatorId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  orderIds    String[]  @db.ObjectId
+  orders      Order[]   @relation(fields: [orderIds], references: [id])
+
+  @@map("books")
+}
+
+model Author {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  slug      String   @unique
+  bookIds   String[] @db.ObjectId
+  books     Book[]   @relation(fields: [bookIds], references: [id])
+  creatorId String   @db.ObjectId
+  creator   User     @relation(fields: [creatorId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("authors")
+}
+
+model Genre {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  slug      String   @unique
+  bookIds   String[] @db.ObjectId
+  books     Book[]   @relation(fields: [bookIds], references: [id])
+  creatorId String   @db.ObjectId
+  creator   User     @relation(fields: [creatorId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("genres")
+}
+
+model Comment {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  bookId    String   @db.ObjectId
+  book      Book     @relation(fields: [bookId], references: [id])
+  userId    String   @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@map("comments")
+}
+
+model Order {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  totalQuantity Int
+  totalPrice    Int
+  isCompleted   Boolean  @default(false)
+  booksIds      String[] @db.ObjectId
+  books         Book[]   @relation(fields: [booksIds], references: [id])
+  userId        String   @db.ObjectId
+  User          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("orders")
+}

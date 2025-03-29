@@ -7,7 +7,7 @@
       </div>
     </div>
     <!-- Center content -->
-    <div class="bg-cyan-50">Center</div>
+    <div>Genres:</div>
     <!-- Right sidebar -->
     <div class="bg-red-50">Right</div>
   </div>

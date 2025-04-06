@@ -1,0 +1,258 @@
+[
+  {
+    "_id": {
+      "$oid": "67c2f9d2f2766bd5c0d78ac8"
+    },
+    "name": "Роберт Ґалбрейт",
+    "slug": "robert-galbreit",
+    "createdAt": {
+      "$date": "2025-03-01T12:13:06.893Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:15:46.879Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c31cb9f2766bd5c0d78ac9"
+    },
+    "name": "Лю Цисінь",
+    "slug": "liu-tsysin",
+    "createdAt": {
+      "$date": "2025-03-01T14:42:01.724Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:20:38.251Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c341fee522d2b09b3b6018"
+    },
+    "name": "Роберт Веґнер",
+    "slug": "robert-vegner",
+    "createdAt": {
+      "$date": "2025-03-01T17:21:02.593Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:21:02.593Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c34209e522d2b09b3b6019"
+    },
+    "name": "Блейк Крауч",
+    "slug": "bleik-krauch",
+    "createdAt": {
+      "$date": "2025-03-01T17:21:13.537Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:21:13.537Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c34216e522d2b09b3b601a"
+    },
+    "name": "Кормак Маккарті",
+    "slug": "kormak-makkarti",
+    "createdAt": {
+      "$date": "2025-03-01T17:21:26.583Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:21:26.583Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c3422ae522d2b09b3b601b"
+    },
+    "name": "Террі Пратчетт",
+    "slug": "terri-pratchett",
+    "createdAt": {
+      "$date": "2025-03-01T17:21:46.878Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:21:46.878Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c34237e522d2b09b3b601c"
+    },
+    "name": "Ніл Стівенсон",
+    "slug": "nil-stivenson",
+    "createdAt": {
+      "$date": "2025-03-01T17:21:59.013Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:21:59.013Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c34243e522d2b09b3b601d"
+    },
+    "name": "Ю Несбьо",
+    "slug": "yu-nesbo",
+    "createdAt": {
+      "$date": "2025-03-01T17:22:11.488Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:22:11.488Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c34256e522d2b09b3b601e"
+    },
+    "name": "Джейн Гарпер",
+    "slug": "dzhein-harper",
+    "createdAt": {
+      "$date": "2025-03-01T17:22:30.174Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:22:30.174Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c34264e522d2b09b3b601f"
+    },
+    "name": "Кевін Дж. Андерсон",
+    "slug": "kevin-dzh.-anderson",
+    "createdAt": {
+      "$date": "2025-03-01T17:22:44.688Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:22:44.688Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c3428de522d2b09b3b6020"
+    },
+    "name": "Звихнутий час",
+    "slug": "zvykhnutyi-chas",
+    "createdAt": {
+      "$date": "2025-03-01T17:23:25.188Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:23:25.188Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c3429be522d2b09b3b6021"
+    },
+    "name": "Стівен Кінг",
+    "slug": "stiven-kinh",
+    "createdAt": {
+      "$date": "2025-03-01T17:23:39.547Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:23:39.547Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c342a9e522d2b09b3b6022"
+    },
+    "name": "Жоель Діккер",
+    "slug": "zhoel-dikker",
+    "createdAt": {
+      "$date": "2025-03-01T17:23:53.090Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:23:53.090Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c342b6e522d2b09b3b6023"
+    },
+    "name": "Джо Аберкромбі",
+    "slug": "dzho-aberkrombi",
+    "createdAt": {
+      "$date": "2025-03-01T17:24:06.240Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T17:24:06.240Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c3513ce522d2b09b3b6025"
+    },
+    "name": "Філіп К. Дік",
+    "slug": "filip-k.-dik",
+    "createdAt": {
+      "$date": "2025-03-01T18:26:04.654Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-01T18:26:04.654Z"
+    },
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "67c4254954fa1c0d211f57c2"
+    },
+    "name": "Крістен Перрін",
+    "slug": "kristen-perrin",
+    "creatorId": {
+      "$oid": "67be0cef6d8c09865dce165c"
+    },
+    "createdAt": {
+      "$date": "2025-03-02T09:30:49.544Z"
+    },
+    "updatedAt": {
+      "$date": "2025-03-02T09:30:49.544Z"
+    }
+  }
+]

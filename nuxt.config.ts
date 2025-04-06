@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   hub: {
     database: true,
-    blob: true,
   },
   modules: ['@nuxthub/core'],
 })

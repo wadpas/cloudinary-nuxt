@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "67c2135c91b0cc8a184ea7c1"
+  },
+  "name": "Детектив",
+  "slug": "detektyv",
+  "createdAt": {
+    "$date": "2025-02-28T19:49:48.991Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T17:00:32.434Z"
+  },
+  "creatorId": {
+    "$oid": "67be0cef6d8c09865dce165c"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2137391b0cc8a184ea7c4"
+  },
+  "name": "Фантастика",
+  "slug": "fantastyka",
+  "createdAt": {
+    "$date": "2025-02-28T19:50:11.697Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T17:00:56.160Z"
+  },
+  "creatorId": {
+    "$oid": "67be0cef6d8c09865dce165c"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2f1b3eb21c101b335da61"
+  },
+  "name": "Трилер",
+  "slug": "tryler",
+  "createdAt": {
+    "$date": "2025-03-01T11:38:27.568Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T17:02:40.486Z"
+  },
+  "creatorId": {
+    "$oid": "67be0cef6d8c09865dce165c"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2f5349dda8523c579c2a2"
+  },
+  "name": "Фентезі",
+  "slug": "fentezi",
+  "createdAt": {
+    "$date": "2025-03-01T11:53:24.844Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T17:08:58.257Z"
+  },
+  "creatorId": {
+    "$oid": "67be0cef6d8c09865dce165c"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c2f5479dda8523c579c2a3"
+  },
+  "name": "Жахи",
+  "slug": "zhakhy",
+  "createdAt": {
+    "$date": "2025-03-01T11:53:43.323Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T17:09:23.526Z"
+  },
+  "creatorId": {
+    "$oid": "67be0cef6d8c09865dce165c"
+  }
+}]

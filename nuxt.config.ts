@@ -5,5 +5,5 @@ export default defineNuxtConfig({
   hub: {
     database: true,
   },
-  modules: ['@nuxthub/core'],
+  modules: ['@nuxthub/core', '@nuxtjs/tailwindcss'],
 })

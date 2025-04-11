@@ -14,10 +14,6 @@
     password: undefined,
   })
 
-  const authenticate = async () => {
-    window.location.href = '/api/auth/github'
-  }
-
   const toast = useToast()
   async function onSubmit(event: FormSubmitEvent<Schema>) {
     toast.add({ title: 'Success', description: 'The form has been submitted.', color: 'success' })
@@ -29,8 +25,8 @@
   <div class="flex h-screen">
     <UCard class="m-auto shadow w-sm">
       <div class="flex flex-col gap-2 mb-4">
-        <h1 class="text-2xl font-bold">Вхід</h1>
-        <p class="text-sm text-gray-500">Вкажіть пошту та пароль, для входу в акаунт</p>
+        <h1 class="text-2xl font-bold">Реєстрація</h1>
+        <p class="text-sm text-gray-500">Введіть пошту і пароль, щоб створити акаунт</p>
       </div>
       <UForm
         :schema="schema"
@@ -60,29 +56,16 @@
           type="submit"
           class="justify-center w-full shadow-xs"
           color="neutral">
-          Увійти
-        </UButton>
-
-        <UButton
-          type="button"
-          class="justify-center w-full shadow-xs"
-          color="neutral"
-          @click="authenticate"
-          variant="outline">
-          <Icon
-            name="uil:github"
-            size="20"
-            style="color: black" />
-          GitHub
+          Реєстрація
         </UButton>
 
         <div class="flex justify-center text-sm">
-          <p>Немає акаунту?</p>
+          <p>Вже маєте акаунт?</p>
           <p></p>
           <NuxtLink
-            to="/auth/register"
+            to="/auth/login"
             class="ml-1 underline">
-            Реєстрація
+            Увійти
           </NuxtLink>
         </div>
       </UForm>
